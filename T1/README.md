@@ -1,3 +1,23 @@
+### Application Description
+
+    This is a simple application that allow users to view a list
+    of available products, add new products, and update existing ones 
+    from MySQL database. Each product has a name, description, price, 
+    and quantity.The application is written in Java and uses Spring Boot 
+    framework.
+
+### How to run the application
+    
+    In order to run the appliaction you need to setup your local MySQL
+    database. You can either stick to the admin user that you intially
+    have or create a new one and grant user the necessary permissions. 
+    Then you need to create a database called inventory. After which you
+    should change the data written in application.properties file to match
+    your user data. After that you'll be able to run the application using 
+    the default run configuration in IntelliJ IDEA.
+
+# Q/A
+
 ### Q1: Was it easy to complete the task using AI? 
 
     The task was very easy to complete, especially with an AI, 
