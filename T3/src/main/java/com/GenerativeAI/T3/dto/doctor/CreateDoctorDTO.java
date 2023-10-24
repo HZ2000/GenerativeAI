@@ -1,12 +1,12 @@
-package com.GenerativeAI.T3.dto;
+package com.GenerativeAI.T3.dto.doctor;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
-import java.util.List;
-
 @Data
-public class DoctorDTO {
+public class CreateDoctorDTO {
+    @NotBlank
     private String name;
+    @NotBlank
     private String specialization;
-    private List<AppointmentDTO> appointments;
 }

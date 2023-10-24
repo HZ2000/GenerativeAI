@@ -1,16 +1,21 @@
-package com.GenerativeAI.T3.dto;
+package com.GenerativeAI.T3.dto.appointment;
 
-import com.GenerativeAI.T3.dto.doctor.CreateDoctorDTO;
-import com.GenerativeAI.T3.dto.patient.CreatePatientDTO;
+import com.GenerativeAI.T3.dto.prescription.CreatePrescriptionDTO;
+import com.GenerativeAI.T3.model.Doctor;
+import com.GenerativeAI.T3.model.Patient;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-public class AppointmentDTO {
+public class CreateAppointmentDTO {
+    @NotNull
+    private Patient patient;
+    @NotNull
+    private Doctor doctor;
+    @NotNull
     private LocalDateTime appointmentDateTime;
-    private CreatePatientDTO patient;
-    private CreateDoctorDTO doctor;
-    private List<PrescriptionDTO> prescriptions;
+    private List<CreatePrescriptionDTO> prescriptions;
 }
